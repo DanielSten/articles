@@ -6,10 +6,10 @@
     <div class="page_articles-all">
       <div v-for="article in articles" :key="article.id" class="card_article-block">
         <div class="card_article_block-title">
-          {{ article.name }}
+          {{ article.title }}
         </div>
         <div class="card_article_block-subtitle">
-          {{ article.price }}
+          {{ article.subtitle }}
         </div>
       </div>
     </div>

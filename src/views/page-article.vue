@@ -47,8 +47,8 @@ export default {
     async add () {
       this.addDisabled = true
       const article = {
-        name: this.title,
-        price: this.subtitle
+        title: this.title,
+        subtitle: this.subtitle
       }
       console.log('about to add ' + JSON.stringify(article))
       await this.addArticleToDb({ article })
