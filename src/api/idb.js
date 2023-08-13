@@ -1,5 +1,5 @@
-const DB_NAME = 'bookdb'
-const STORAGE_NAME = 'books'
+const DB_NAME = 'articleDb'
+const STORAGE_NAME = 'articles'
 const DB_VERSION = 1
 let DB
 export default {
@@ -11,7 +11,6 @@ export default {
             const request = window.indexedDB.open(DB_NAME, DB_VERSION)
             request.onerror = e => {
                 console.log('Error opening db', e)
-                // eslint-disable-next-line prefer-promise-reject-errors
                 reject('Error')
             }
             request.onsuccess = e => {
